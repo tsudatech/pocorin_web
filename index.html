@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n-key="page_title">ぽこりん - そろえて消して、フィーバーで一気に！</title>
+    <meta
+      name="description"
+      data-i18n-key="meta_description"
+      content="ぽこりんは、4色のぽこりんを入れかえて3つそろえて消す、iPhone 向けの連鎖パズルゲームです。CPU とスコアで勝負するチャレンジ、好きなルールでハイスコアをめざすフリープレイ、「X手以内でY連鎖」のお題をとくれんさパズルの3つのモードで遊べます。ログインは不要で、広告もありません。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="images/app-icon.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav-container">
+        <a class="nav-logo" href="#">
+          <img src="images/app-icon.png" alt="ぽこりん" class="nav-logo-mark" />
+          <h1 data-i18n-key="app_name">ぽこりん</h1>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#modes" data-i18n-key="nav_modes">モード</a></li>
+          <li><a href="#features" data-i18n-key="nav_features">機能</a></li>
+          <li><a href="#download" data-i18n-key="nav_download">ダウンロード</a></li>
+          <li><a href="#privacy" data-i18n-key="nav_privacy">プライバシー</a></li>
+          <li><a href="#contact" data-i18n-key="nav_contact">お問い合わせ</a></li>
+        </ul>
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="ja">日本語</button>
+          <span class="lang-separator">|</span>
+          <button class="lang-btn" data-lang="en">English</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- アプリのタイトルロゴ（言語で差しかえ） -->
+          <img
+            class="hero-logo"
+            src="images/logo-ja.png"
+            data-src-ja="images/logo-ja.png"
+            data-src-en="images/logo-en.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <h2 class="hero-title">
+            <span data-i18n-key="hero_title_line1">そろえて消して、</span>
+            <span class="hero-title-accent" data-i18n-key="hero_title_line2">フィーバーで一気に！</span>
+          </h2>
+          <p class="hero-description" data-i18n-key="hero_description">
+            ぽこりんを押したまま、となりへスライドして入れかえ。3つ以上そろうと消えて、落ちてきたぽこりんがまたそろえば連鎖！ 消すほどたまるゲージが満タンになると、タップだけでまとめて消せるフィーバーに入ります。
+          </p>
+          <div class="hero-buttons">
+            <a href="#download" class="btn btn-primary" data-i18n-key="hero_cta_download">ダウンロード</a>
+            <a href="#modes" class="btn btn-outline" data-i18n-key="hero_cta_modes">モードを見る</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="app-icon-placeholder">
+            <img src="images/app-icon.png" alt="ぽこりん" class="app-icon-image" />
+          </div>
+          <!-- ぽこりん4色 -->
+          <div class="hero-pokos" aria-hidden="true">
+            <img src="images/modes/poko_1_pink.png" alt="" />
+            <img src="images/modes/poko_2_yellow.png" alt="" />
+            <img src="images/modes/poko_3_green.png" alt="" />
+            <img src="images/modes/poko_4_blue.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modes Section -->
+    <section class="modes" id="modes">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="modes_title">3つのモード</h2>
+        <p class="section-lead" data-i18n-key="modes_lead">
+          CPU とのスコア勝負、ハイスコアへの挑戦、じっくり考えるお題。気分に合わせて選べます。
+        </p>
+        <div class="modes-grid">
+          <div class="mode-card mode-challenge">
+            <img src="images/modes/poko_4_blue.png" alt="" class="mode-mark" loading="lazy" />
+            <div class="mode-body">
+              <h3 data-i18n-key="mode_challenge_title">チャレンジ</h3>
+              <p data-i18n-key="mode_challenge_text">
+                CPU とスコア勝負。さきに 12000 点とったほうが勝ちです。4つ以上まとめて消すか2連鎖以上で、相手の盤面におじゃまの岩を送れます。レベル1〜10を順にのぼり、レベル10に勝つとレベル30まで好きな強さで遊べます。
+              </p>
+            </div>
+          </div>
+          <div class="mode-card mode-free">
+            <img src="images/modes/poko_2_yellow.png" alt="" class="mode-mark" loading="lazy" />
+            <div class="mode-body">
+              <h3 data-i18n-key="mode_free_title">フリープレイ</h3>
+              <p data-i18n-key="mode_free_text">
+                好きなルールでハイスコアをめざします。60秒アタック、30手チャレンジ、フィーバーで時間がのびるモード、終わりのない「のんびり」の4種類。
+              </p>
+            </div>
+          </div>
+          <div class="mode-card mode-puzzle">
+            <img src="images/modes/poko_3_green.png" alt="" class="mode-mark" loading="lazy" />
+            <div class="mode-body">
+              <h3 data-i18n-key="mode_puzzle_title">れんさパズル</h3>
+              <p data-i18n-key="mode_puzzle_text">
+                「X手以内でY連鎖」のお題を14問。消えたマスは補充されないので、落ちかたを読んで手を組み立てます。どの問題もかならず解ける盤面だけを出題します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="features_title">主な機能</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">🔗</div></div>
+            <h3 data-i18n-key="feature_chain_title">連鎖するほど高得点</h3>
+            <p data-i18n-key="feature_chain_text">
+              消えたあとに落ちてきたぽこりんがそろうと連鎖。つながるほど点数の倍率が上がります。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">🎉</div></div>
+            <h3 data-i18n-key="feature_fever_title">フィーバー</h3>
+            <p data-i18n-key="feature_fever_text">
+              消すほどゲージがたまり、満タンで7秒間のフィーバー。タップだけで同じ色のかたまりをまとめて消せます。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">🤖</div></div>
+            <h3 data-i18n-key="feature_cpu_title">強さを選べる CPU</h3>
+            <p data-i18n-key="feature_cpu_text">
+              レベルが上がるほど、CPU の手は正確に、送ってくる岩は多くなります。勝つと次のレベルがひらきます。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">🧩</div></div>
+            <h3 data-i18n-key="feature_puzzle_title">かならず解けるお題</h3>
+            <p data-i18n-key="feature_puzzle_text">
+              れんさパズルの盤面は、お題の手数で解けて、それより少ない手数では解けないことを確かめてから出題します。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">🏆</div></div>
+            <h3 data-i18n-key="feature_achievement_title">実績を集める</h3>
+            <p data-i18n-key="feature_achievement_text">
+              はじめての連鎖、フィーバー、CPU への勝利など、15の実績があります。達成するとお祝いの演出が出ます。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">📊</div></div>
+            <h3 data-i18n-key="feature_record_title">遊んだ記録が残る</h3>
+            <p data-i18n-key="feature_record_text">
+              プレイ回数、さいだい連鎖、フリープレイの自己ベスト、チャレンジの勝敗、プレイ時間を見られます。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">☁️</div></div>
+            <h3 data-i18n-key="feature_icloud_title">iCloud に預けられる</h3>
+            <p data-i18n-key="feature_icloud_text">
+              記録を iCloud に置いておけば、機種を変えても続きから遊べます。使うかどうかは選べます。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">🌏</div></div>
+            <h3 data-i18n-key="feature_lang_title">日本語と英語</h3>
+            <p data-i18n-key="feature_lang_text">
+              端末の言語に合わせて、日本語と英語で表示します。はじめての人向けの案内とあそびかたもあります。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><div class="icon-placeholder">🔒</div></div>
+            <h3 data-i18n-key="feature_privacy_title">ログインも広告もなし</h3>
+            <p data-i18n-key="feature_privacy_text">
+              アカウントの登録はいりません。広告も表示しません。遊んだ記録は端末の中に保存されます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="download_title">ダウンロード</h2>
+        <div class="download-content">
+          <div class="download-info">
+            <h3 data-i18n-key="download_heading">App Store で今すぐダウンロード</h3>
+            <p data-i18n-key="download_subheading">iOS 26.0 以降に対応しています。</p>
+            <a href="#" class="app-store-placeholder" data-i18n-key="download_button">App Store でダウンロード</a>
+          </div>
+          <div class="download-requirements">
+            <h4 data-i18n-key="download_requirements_title">システム要件</h4>
+            <ul>
+              <li data-i18n-key="download_requirements_ios">iOS 26.0 以降</li>
+              <li data-i18n-key="download_requirements_devices">iPhone／縦向き</li>
+              <li data-i18n-key="download_requirements_language">日本語・英語</li>
+              <li data-i18n-key="download_requirements_iap">App内課金なし・広告なし</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="privacy" id="privacy">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="privacy_title">プライバシーポリシー</h2>
+        <div class="privacy-content">
+          <h3 data-i18n-key="privacy_handling_heading">個人情報の取り扱いについて</h3>
+          <p data-i18n-key="privacy_handling_text">
+            ぽこりん（以下「本アプリ」）は、利用者のプライバシーを尊重し、個人情報の保護に努めます。本アプリはアカウント登録を必要とせず、開発者のサーバーを持ちません。
+          </p>
+
+          <h4 data-i18n-key="privacy_collect_heading">収集する情報</h4>
+          <p data-i18n-key="privacy_collect_text">
+            本アプリが扱うのは、遊んだ記録（プレイ回数、さいだい連鎖、フィーバーの回数、フリープレイの自己ベスト、チャレンジの勝敗、といたれんさパズル）、アプリを開いていた時間、実績の達成状況、および各種設定だけで、これらはすべて端末の中に留まります。氏名・メールアドレス・位置情報は収集しません。利用状況の解析（アナリティクス）も行いません。
+          </p>
+
+          <h4 data-i18n-key="privacy_storage_heading">情報の保存</h4>
+          <p data-i18n-key="privacy_storage_text">
+            遊んだ記録と設定（フィーバーのあり・なし、音のあり・なしなど）は、端末内（UserDefaults）に保存されます。
+          </p>
+
+          <h4 data-i18n-key="privacy_icloud_heading">iCloud について</h4>
+          <p data-i18n-key="privacy_icloud_text">
+            設定で iCloud バックアップを有効にした場合に限り、遊んだ記録が iCloud のキーバリューストアに保存され、同じ Apple アカウントの端末間で同期されます。この同期は Apple の iCloud 上で完結し、開発者がその内容を参照することはできません。設定は同期されず、その端末にだけ残ります。
+          </p>
+
+          <h4 data-i18n-key="privacy_ads_heading">広告について</h4>
+          <p data-i18n-key="privacy_ads_text">
+            本アプリは広告を表示しません。広告のための識別子（IDFA）も使いません。
+          </p>
+
+          <h4 data-i18n-key="privacy_network_heading">外部との通信</h4>
+          <p data-i18n-key="privacy_network_text">
+            本アプリは、開発者のサーバーへ利用者の記録を送信しません。開発者はサーバーを持っていません。ネットワークを使うのは、利用者が iCloud バックアップを有効にした場合の Apple のサービスとの通信だけです。
+          </p>
+
+          <h4 data-i18n-key="privacy_delete_heading">データの削除</h4>
+          <p data-i18n-key="privacy_delete_text">
+            アプリを削除すると、端末内に保存された記録と設定も一緒に削除されます。iCloud バックアップを使っている場合は、iOS の設定から iCloud 上のデータを削除できます。
+          </p>
+
+          <h4 data-i18n-key="privacy_children_heading">お子さまの利用について</h4>
+          <p data-i18n-key="privacy_children_text">
+            本アプリは年齢を問わず利用できます。開発者は個人情報を収集せず、アプリ内購入や広告もありません。
+          </p>
+
+          <h4 data-i18n-key="privacy_contact_heading">お問い合わせ</h4>
+          <p>
+            <span data-i18n-key="privacy_contact_text_before">プライバシーポリシーに関するご質問は、</span
+            ><a href="#contact" data-i18n-key="privacy_contact_link">お問い合わせ</a
+            ><span data-i18n-key="privacy_contact_text_after">までご連絡ください。</span>
+          </p>
+
+          <p class="privacy-update" data-i18n-key="privacy_update">最終更新: 2026 年 9 月</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="contact_title">お問い合わせ</h2>
+        <div class="contact-content">
+          <p data-i18n-key="contact_intro">
+            アプリに関するご質問、バグ報告、機能要望などがございましたら、お気軽にお問い合わせください。
+          </p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <h3 data-i18n-key="contact_email_heading">📧 メール</h3>
+              <p><a href="mailto:angocat215@gmail.com">angocat215@gmail.com</a></p>
+            </div>
+            <div class="contact-method">
+              <h3 data-i18n-key="contact_bug_heading">🐛 バグ報告</h3>
+              <p data-i18n-key="contact_bug_text">
+                解けないお題が出た、動きがおかしいといった不具合を見つけたら、上記メールアドレスまで詳細をお送りください。
+              </p>
+            </div>
+            <div class="contact-method">
+              <h3 data-i18n-key="contact_feature_heading">💡 機能要望</h3>
+              <p data-i18n-key="contact_feature_text">
+                こんなモードやお題がほしい、といったご要望もお待ちしています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p data-i18n-key="footer_copyright">© 2026 ぽこりん. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
